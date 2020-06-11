@@ -1,0 +1,15 @@
+package pageobjmodel;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Form {
+	/*@FindBy(xpath="//label[contains(text(),'Single')]")
+	WebElement singleRadio;
+
+	
+	public void select_radiobut() throws InterruptedException{
+		 Thread.sleep(5000);
+		singleRadio.click();
+	}*/
+}

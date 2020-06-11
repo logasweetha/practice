@@ -1,0 +1,36 @@
+package stepDef;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Step {
+
+	WebDriver driver;
+	
+
+	@Given("^launch the browser$")
+	public void launch_the_browser() throws Throwable {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\RATHISH\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		
+		driver.get("https://www.ing.com.au/");
+		driver.manage().window().maximize();
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+
+	}
+
+	@When("^fill the form$")
+	public void fill_the_form() throws Throwable {
+	   
+	}
+
+	@Then("^logged in with given details$")
+	public void logged_in_with_given_details() throws Throwable {
+	    
+	}
+}

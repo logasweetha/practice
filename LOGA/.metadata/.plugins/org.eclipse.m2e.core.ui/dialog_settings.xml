@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\eclipse\java prog\selenium\INGAustralia-master\INGAustralia-master\RestAssured\pom.xml"/>
+			<item value="C:\Users\RATHISH\workspace\LOGA\restassure\pom.xml"/>
+			<item value="C:\Users\RATHISH\workspace\LOGA\restassure\src\test\java\com\demo\restassure\GetCode.java"/>
+			<item value="C:\Users\RATHISH\workspace\LOGA\firstcry"/>
+			<item value="C:\Users\eclipse\java prog\selenium\INGAustralia-master\INGAustralia-master\PracticeApi\src\test\java\restAssuredFramework\PracticeApi\GetTest.java"/>
+			<item value="C:\Users\RATHISH\workspace\LOGA\sec\src\test\java\stepDef\StepDef2.java"/>
+			<item value="C:\Users\RATHISH\workspace\LOGA\first\pom.xml"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.demo.badDay"/>
+			<item value="com.demo.rest"/>
+			<item value="com.demo.finalrest"/>
+			<item value="com.demo.restassure"/>
+			<item value="com.demo.finalRest"/>
+		</list>
+		<list key="groupId">
+			<item value="com.demo"/>
+		</list>
+		<list key="artifactId">
+			<item value="badDay"/>
+			<item value="rest"/>
+			<item value="finalrest"/>
+			<item value="restassure"/>
+			<item value="finalRest"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

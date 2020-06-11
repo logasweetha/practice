@@ -1,0 +1,31 @@
+package com.demo.rest;
+
+import org.json.simple.JSONObject;
+import org.junit.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.internal.path.json.mapping.JsonObjectDeserializer;
+import io.restassured.specification.RequestSpecification;
+
+public class PostPutDelete {
+
+	
+	
+	@Test
+	public void test1() {
+
+		RequestSpecification request=RestAssured.given();
+		
+		request.header("Content-Type","application/json");
+		
+		JSONObject json=new JSONObject();
+		json.put("id", "57");
+		json.put("employee_name","snake babu");
+		json.put("employee_salary","20000");
+		json.put("employee_age","30");
+		json.put("profile_image","");
+		
+		
+		
+	}
+}

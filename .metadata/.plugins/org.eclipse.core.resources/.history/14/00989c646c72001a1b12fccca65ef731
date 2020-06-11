@@ -1,0 +1,31 @@
+package com.demo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Hello {
+public static void main(String[] args) throws InterruptedException {
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\RATHISH\\Downloads\\chromedriver_win32\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	
+	driver.get("https://www.ing.com.au/");
+	driver.manage().window().maximize();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	
+	driver.findElement(By.xpath("//li[@class='menu-cell'][1]")).click();
+	
+	driver.findElement(By.xpath("//div[@class='column-inner-tab-cell']//span[text()='Personal Savings']")).click();
+	Thread.sleep(1000);
+	driver.findElement(By.xpath("//h6[text()='Savings Maximiser']")).click();
+	Thread.sleep(1000);
+	driver.findElement(By.xpath("//div[@class='savings-main']//a[text()='Open now' and @aria-role='button']")).click();
+	Thread.sleep(1000);
+	driver.findElement(By.xpath("//a[@tabindex='2']")).click();
+	Thread.sleep(5000);
+	driver.findElement(By.xpath("//div[@class='radio style-scope ing-radio-button-group']//label[@for='singleOrJointButtons-0']")).click();
+	
+	
+}
+}

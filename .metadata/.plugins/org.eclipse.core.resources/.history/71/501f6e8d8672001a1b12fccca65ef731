@@ -1,0 +1,24 @@
+package stepDef;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Step {
+
+	
+	@Given("^launch the browser$")
+	public void launch_the_browser() throws Throwable {
+	    
+	}
+
+	@When("^fill the form$")
+	public void fill_the_form() throws Throwable {
+	   
+	}
+
+	@Then("^logged in with given details$")
+	public void logged_in_with_given_details() throws Throwable {
+	    
+	}
+}

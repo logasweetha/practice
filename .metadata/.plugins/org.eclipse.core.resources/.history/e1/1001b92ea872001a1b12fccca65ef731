@@ -1,0 +1,31 @@
+package pageobjmodel;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Form {
+	//@FindBy(xpath="//label[contains(text(),'Single')]")
+	//WebElement singleRadio;
+
+	public Form() {
+		PageFactory.initElements(WebDriver driver, Form);		
+	}
+	public void select_radiobut() throws InterruptedException{
+		 Thread.sleep(5000);
+		 WebDriverWait wait=new WebDriverWait(driver, 100);
+			WebElement singleradio=driver.findElement(By.xpath("//label[contains(text(),'Single')]"));
+			wait.until(ExpectedConditions.visibilityOf(singleradio));
+			wait.until(ExpectedConditions.elementToBeClickable(singleradio));
+			JavascriptExecutor executor=(JavascriptExecutor)driver;
+			executor.executeScript("argument[0].click();",singleradio);
+			
+	}
+
+	
+}

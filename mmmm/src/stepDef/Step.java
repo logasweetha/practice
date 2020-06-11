@@ -1,0 +1,66 @@
+package stepDef;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import pageobjmodel.Home;
+
+public class Step {
+
+	WebDriver driver;
+
+
+	@Given("^launch the browser$")
+	public void launch_the_browser() throws Throwable {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\RATHISH\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		
+		driver.get("https://www.ing.com.au/");
+		driver.manage().window().maximize();
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+	}
+
+	@When("^fill the form$")
+	public void fill_the_form() throws Throwable {
+	   Home home=PageFactory.initElements(driver, Home.class);
+	   home.click_on_bankAndSave();
+	   home.click_on_personalSaving();
+	   Thread.sleep(1000);
+	   home.click_on_savingMax();
+	   Thread.sleep(1000);
+	   home.click_on_openNow();
+	   home.click_on_newCust();
+	   
+	 // Form form=PageFactory.initElements(driver, Form.class);
+	  
+	  
+	  WebDriverWait wait=new WebDriverWait(driver, 100);
+	  WebElement singleradio=driver.findElement(By.xpath("//label[contains(text(),'Single')]"));
+	  wait.until(ExpectedConditions.visibilityOf(singleradio));
+	  
+	  
+	  wait.until(ExpectedConditions.elementToBeClickable(singleradio));
+	 // singleradio.click();
+	  JavascriptExecutor executor=(JavascriptExecutor)driver;
+	  executor.executeScript("argument[0].click();",singleradio);
+		
+	}
+
+	@Then("^logged in with given details$")
+	public void logged_in_with_given_details() throws Throwable {
+	    
+	}
+}
